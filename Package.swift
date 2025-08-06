@@ -3,17 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "CryptoUtils9",
+    name: "Utils9Crypto",
     defaultLocalization: "en",
     platforms: [.iOS(.v15), .macOS(.v10_15)],
     products: [
-        .library(name: "CryptoUtils9", targets: ["CryptoUtils9"]),
+        .library(name: "Utils9Crypto", targets: ["Utils9Crypto"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-crypto", branch: "main"),
     ],
     targets: [
-        .target(name: "CryptoUtils9",
+        .target(name: "Utils9Crypto",
                 dependencies: [
                     .product(name: "Crypto", package: "swift-crypto"),
                 ],
